@@ -1,0 +1,52 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+.image-container {
+    text-align:center;
+}
+img {
+    display: none;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.border-px {
+    padding: 20px 50px;
+    border: 1px solid #dee2e6;
+}
+.btn_blue {
+    background-color: #007bff;
+}
+form .btn_blue {
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    font-weight: bold;
+}
+form .btn_blue:hover {
+    background-color: #0069d9;
+    color: white;
+}
+form .form-control {
+    padding: 15px;
+}
+.input-group {
+    width: calc(100% -98px);
+}
+.fa-square-o {
+    font-size: 40px;
+    color: #405189;
+}
+.border-line {
+    border: 1px solid lightgrey;
+}
+.list-done .name {
+    text-decoration: line-through;
+    color: red;
+}
+.display-block {
+    display: block;
+}
+.display-none {
+    display: none;
+}
