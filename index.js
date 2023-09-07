@@ -1,5 +1,7 @@
 const form = document.querySelector("form");
 const list = document.querySelector(".todo-list");
+const input = document.querySelector("input");
+
 
 
 /*
@@ -29,6 +31,13 @@ list.addEventListener('click', function (e) {
 
 
 function addTask(taskText) {
+
+
+	if (input.value.trim() === "") {
+        const addButton = document.querySelector(".btn_blue");
+        addButton.disabled = true;
+        return; 
+    }
 	list.innerHTML = list.innerHTML + `
         <div class="row justify-content-between task pt-4">
             <div class="col-auto">
@@ -38,9 +47,16 @@ function addTask(taskText) {
             <div class="col-auto text-end mb-3">
                 <button type="button" class="btn-close" aria-label="Close" onclick="removeTask(this)"></button>
             </div>
-            <div class="border-line"></div>
+            <div class="border-line mb-4"></div>
         </div>
     `;
+
+	input.value = "";
+	
+
+	const addButton = document.querySelector(".btn_blue");
+    addButton.disabled = false;
+
 }
 
 function removeTask(removeButton) {
