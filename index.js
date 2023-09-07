@@ -34,9 +34,8 @@ function addTask(taskText) {
 
 
 	if (input.value.trim() === "") {
-        const addButton = document.querySelector(".btn_blue");
-        addButton.disabled = true;
-        return; 
+        
+        return alert("Спочатку введіть текст"); 
     }
 	list.innerHTML = list.innerHTML + `
         <div class="row justify-content-between task pt-4">
@@ -52,10 +51,6 @@ function addTask(taskText) {
     `;
 
 	input.value = "";
-	
-
-	const addButton = document.querySelector(".btn_blue");
-    addButton.disabled = false;
 
 }
 
