@@ -78,13 +78,13 @@ function showTasks(taskType) {
 		// 2.1 Отримати елемент Checkbox в задачі
 		let checkboxElement = task.querySelector("input[type='checkbox']");
 		 // 2.2 Якщо taskType рівне 'всі' тоді показуємо цю задачу 
-		if (taskType === 'всі') {
+		if (taskType === 'All') {
 			task.style.display = "block";
 		// 2.3 Інакше якщо taskType рівне 'завершені' і чекбокс відмічений показуєму цю задачу
-		} else if (taskType === 'завершені' && checkboxElement.checked) {
+		} else if (taskType === 'Completed' && checkboxElement.checked) {
 			task.style.display = "block";
 				// якщо такстайп незавершені і чекбокс не відмічений показуємо цю задачу
-		} else if (taskType === 'незавершені' && !checkboxElement.checked) {
+		} else if (taskType === 'Active' && !checkboxElement.checked) {
 			task.style.display = "block";
 				// інакше приховуємо
 		} else {
