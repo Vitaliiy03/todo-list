@@ -46,7 +46,7 @@ function addTask(taskText) {
             <div class="col-auto text-end mb-3">
                 <button type="button" class="btn-close" aria-label="Close" onclick="removeTask(this)"></button>
             </div>
-            <div class="border-line mb-4"></div>
+            <div class="border-line mb-2"></div>
         </div>
     `;
 
